@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>CodeProject.AI_Server_GPU</Name>
+  <Repository>codeproject/ai-server:gpu</Repository>
+  <Registry>https://hub.docker.com/r/codeproject/ai-server</Registry>
+  <Network>unraidproxy</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://www.codeproject.com/Forums/1869052/CodeProject-API</Support>
+  <Project>https://www.codeproject.com/ai/docs/</Project>
+  <Overview>Fast, free, self-hosted Artificial Intelligence Server for any platform, any language.&#xD;
+CodeProject.AI Server is a locally installed, self-hosted, fast, free and Open Source Artificial Intelligence server for any platform, any language. No off-device or out of network data transfer, no messing around with dependencies, and able to be used from any platform, any language. Runs as a Windows Service or a Docker container.&#xD;
+&#xD;
+It may take some time to install as the image takes up a few GB of space!&#xD;
+&#xD;
+One among many examples of use: it can be easily integrated in AgentDVR Video Surveillance Software for face or object recognition.&#xD;
+&#xD;
+**_GPU:_** If you wish to use a NVIDIA GPU instead of your CPU:&#xD;
+1. Install Unraid Nvidia Plugin (available in the community apps store): https://forums.unraid.net/topic/98978-plugin-nvidia-driver/&#xD;
+2. Add **`:gpu`** to the end of the **_`Repository:`_** field. Should look like this: **`codeproject/ai-server:gpu`**&#xD;
+3. Add **`--runtime=nvidia`** to the **_`Extra Parameters:`_** field (to view this field switch to advanced view by clicking the toggle in the top right next to **`Basic View`**) .&#xD;
+4. Copy your GPU UUID to **_`Nvidia Visible Devices:`_**. (Can be found in the Nvidia Driver settings page under **`nVidia Info:`**). Should look something like this: **`GPU-1a2b3456-7890-1cd2-ea34-56b7c8de90a1`**&#xD;
+---&#xD;
+*I am not the creator or maintainer of this container I am merely providing the Unraid template.</Overview>
+  <Category>Security:</Category>
+  <WebUI>http://[IP]:[PORT:5000]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/alexbn71/unraid-templates/master/CodeProject.AI_Server/CodeProject.AI_Server.xml</TemplateURL>
+  <Icon>https://codeproject.freetls.fastly.net/App_Themes/CodeProject/Img/logo250x135.gif</Icon>
+  <ExtraParams>--runtime=nvidia</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1676451472</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Port 1" Target="5000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5000</Config>
+  <Config Name="Nvidia Visible Devices" Target="NVIDIA_VISIBLE_DEVICES" Default="" Mode="" Description="Requires Nvidia GPU and Unraid Nvidia drivers. Default is none" Type="Variable" Display="always" Required="false" Mask="false">GPU-8c64e940-024f-7047-5d07-781782a19a16</Config>
+  <Config Name="Performance Mode" Target="MODE" Default="High|Medium|Low" Mode="" Description="CodeProject offers three modes allowing you to trade off speed for performance. You can specify performance mode to be High, Medium, and Low. Default is Medium." Type="Variable" Display="always" Required="false" Mask="false">High</Config>
+</Container>
