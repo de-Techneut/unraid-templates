@@ -25,7 +25,7 @@ One among many examples of use: it can be easily integrated in AgentDVR Video Su
 *I am not the creator or maintainer of this container I am merely providing the Unraid template.</Overview>
   <Category>Security:</Category>
   <WebUI>http://[IP]:[PORT:5000]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/alexbn71/unraid-templates/master/CodeProject.AI_Server/CodeProject.AI_Server.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/de-Techneut/unraid-templates/main/CodeProject.AI_Server_GPU/CodeProject.AI_Server_GPU.xml</TemplateURL>
   <Icon>https://codeproject.freetls.fastly.net/App_Themes/CodeProject/Img/logo250x135.gif</Icon>
   <ExtraParams>--runtime=nvidia</ExtraParams>
   <PostArgs/>
