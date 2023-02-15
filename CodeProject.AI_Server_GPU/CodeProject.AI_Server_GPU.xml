@@ -35,6 +35,6 @@ One among many examples of use: it can be easily integrated in AgentDVR Video Su
   <DonateLink/>
   <Requires/>
   <Config Name="Host Port 1" Target="5000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5000</Config>
-  <Config Name="Nvidia Visible Devices" Target="NVIDIA_VISIBLE_DEVICES" Default="" Mode="" Description="Requires Nvidia GPU and Unraid Nvidia drivers. Default is none" Type="Variable" Display="always" Required="false" Mask="false">GPU-8c64e940-024f-7047-5d07-781782a19a16</Config>
+  <Config Name="Nvidia Visible Devices" Target="NVIDIA_VISIBLE_DEVICES" Default="" Mode="" Description="Requires Nvidia GPU and Unraid Nvidia drivers." Type="Variable" Display="always" Required="false" Mask="false">YOURGPUUUID</Config>
   <Config Name="Performance Mode" Target="MODE" Default="High|Medium|Low" Mode="" Description="CodeProject offers three modes allowing you to trade off speed for performance. You can specify performance mode to be High, Medium, and Low. Default is Medium." Type="Variable" Display="always" Required="false" Mask="false">High</Config>
 </Container>
