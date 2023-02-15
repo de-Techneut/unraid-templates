@@ -3,7 +3,7 @@
   <Name>CodeProject.AI_Server_GPU</Name>
   <Repository>codeproject/ai-server:gpu</Repository>
   <Registry>https://hub.docker.com/r/codeproject/ai-server</Registry>
-  <Network>unraidproxy</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
